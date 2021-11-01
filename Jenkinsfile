@@ -24,7 +24,7 @@ node{
    sh 'docker push ssgowthamss/myweb:0.0.2'
    }
    stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin123 3.108.54.77:8083"
+   sh "docker login -u admin -p 619916 3.108.54.77:8083"
    sh "docker tag ssgowthamss/myweb:0.0.2 3.108.54.77:8083/gowtham:2.0.0"
    sh 'docker push 3.108.54.77:8083/gowtham:2.0.0'
    }
